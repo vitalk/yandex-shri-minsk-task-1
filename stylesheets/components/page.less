@@ -1,0 +1,44 @@
+// Page.
+
+
+.page {
+
+    &__section {
+        // Add a gap between page sections.
+        margin-bottom: 2* @unit;
+
+
+        // Make gap between last section and footer even bigger.
+        &:last-child {
+            margin-bottom: 4* @unit;
+        }
+    }
+
+
+    &__intro {
+        // 1st-level heading for page intro.
+        font-size: @h1-font-size;
+
+        // More empty space to breeze.
+        margin-top: 3* @unit;
+        margin-bottom: 3* @unit;
+    }
+
+
+    &__title {
+        text-align: center;
+    }
+
+
+    &__footer {
+        // More empty space to breeze.
+        padding-top: @unit;
+        padding-bottom: @unit;
+
+        font-size: .875em;
+        text-align: center;
+
+        // Pseudo gradient border above.
+        box-shadow: 0 0 .142857em rgba(0,0,0,.2);
+    }
+}

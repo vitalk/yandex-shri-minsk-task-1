@@ -1,0 +1,60 @@
+// Task list.
+
+
+.task-list {
+    counter-reset: task-counter;
+
+
+    &__item {
+        // Create a new position context, so counter can be properly
+        // positioned.
+        position: relative;
+
+        counter-increment: task-counter;
+
+
+        &:after {
+            #palette;
+            @x: 2em;
+
+            // Use upper-left corner to show counter;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-50%) translateY(-50%);
+            content: counter(task-counter, upper-roman);
+
+            // Ensure the counter is centered.
+            font-size: @x/2;
+            line-height: @x;
+            width: @x;
+            height: @x;
+            text-align: center;
+            border-radius: 50%;
+
+            color: @c;
+            background: @b2;
+            border: solid 1px @b;
+        }
+    }
+
+
+    @media @desktop {
+
+        &__item {
+            display: inline-block;
+            width: 33%;
+            vertical-align: top;
+
+            // Ensure the gap between tasks exists.
+            padding-left: @unit/2;
+            padding-right: @unit/2;
+
+
+            &:after {
+                // Pull counter to center of each task on desktop and above.
+                left: 50%;
+            }
+        }
+    }
+}

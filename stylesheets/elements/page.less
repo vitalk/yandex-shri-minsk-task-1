@@ -1,0 +1,15 @@
+// Per-page styling.
+
+html {
+    // Apply a natural box layout model globally, but allowing components to
+    // change.
+    box-sizing: border-box;
+
+    // Don't override user defaults.
+    font: ~'normal 100%/@{line-height-ratio} @{sans-serif-font-family}';
+
+    // Improve font rendering on OSX (the default method better only for dark
+    // text on light backgrounds).
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,54 @@
+// Work.
+
+
+.work {
+    #palette;
+
+
+    &__link {
+        // Ensue the link to work is properly aligned at center of the
+        // container.
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    &__list {
+        // Use dots to style list items.
+        list-style: initial;
+
+        // Apply margin for better readability.
+        margin-left: @unit;
+    }
+
+
+    &__url {
+        .code;
+
+
+        &:hover {
+            background: @b2;
+        }
+    }
+
+
+    @media @laptop-and-up {
+
+        &__desc {
+            width: 70%;
+        }
+
+
+        &__link {
+            max-width: 10em;
+        }
+
+
+        &__list {
+            // Increase list margin for better readability on laptop and
+            // above.
+            margin-left: 2* @unit;
+        }
+    }
+}

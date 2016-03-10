@@ -1,0 +1,18 @@
+{
+  "name": "yandex-shri-minsk-task-1",
+  "version": "0.0.1",
+  "author": "Vital Kudzelka <vital.kudzelka@gmail.com>",
+  "description": "Анкета поступающего в ШРИ",
+  "license": "MIT",
+  "homepage": "https://github.com/vitalk/yandex-shri-minsk-task-1",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-inline": "^0.3.6",
+    "less-plugin-autoprefix": "^1.5.1"
+  }
+}

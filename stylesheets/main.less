@@ -1,0 +1,58 @@
+// Main stylesheet goes here.
+
+// Essential variables.
+@import 'vars';
+
+
+// Micro clearfix hack, as per: http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix() {
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+    &:after { clear: both; }
+    zoom: 1;
+}
+
+
+// Mediocre reset; do not use on sites of any reasonable size.
+
+* {
+    margin:  0;
+    padding: 0;
+
+
+    // A natural box layout model applied globally, ensure it inherited.
+    &,
+    &:after,
+    &:before {
+        box-sizing: inherit;
+    }
+}
+
+
+// Per-page and elements styling.
+@import 'elements/page';
+@import 'elements/links';
+@import 'elements/lists';
+@import 'elements/typography';
+
+
+// Objects and abstractions.
+@import 'objects/wrapper';
+@import 'objects/button';
+@import 'objects/media';
+
+
+// Components.
+@import 'components/page';
+@import 'components/button';
+@import 'components/copyright';
+@import 'components/highlight';
+@import 'components/skillset';
+@import 'components/skill';
+@import 'components/task-list';
+@import 'components/task';
+@import 'components/work-list';
+@import 'components/work';

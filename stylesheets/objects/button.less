@@ -1,0 +1,40 @@
+// Button.
+
+
+.button {
+    // Set minimum button size to easy interact.
+    display: inline-block;
+    min-width: 1em;
+
+    // Inherit font styles
+    font: inherit;
+
+    // Normalize styles
+    line-height: @line-height-ratio;
+    vertical-align: middle;
+
+    padding: .5em @unit;
+
+    // Align text to center
+    text-align: center;
+
+    // Don't wrap text in buttons
+    white-space: nowrap;
+
+    // Force enable appearance as for clickable elements
+    cursor: pointer;
+
+    // Don't allow buttons to have underlines
+    text-decoration: none;
+
+    // Prevents button outline
+    outline: none;
+
+
+    // Disable cursor interaction, pointer events and mute disabled buttons.
+    &[disabled] {
+        cursor: not-allowed !important;
+        opacity: .7;
+        pointer-events: none;
+    }
+}

@@ -1,0 +1,27 @@
+// Media object.
+
+
+.media {
+    // Allows us to control vertical alignments.
+    display: table;
+
+    // Ensure the object occupy the whole width of its parent.
+    width: 100%;
+
+
+    &__img,
+    &__body {
+        display: block;
+    }
+
+
+    @media @laptop-and-up {
+
+        &__img,
+        &__body {
+            // Align content to their middles.
+            vertical-align: middle;
+            display: table-cell;
+        }
+    }
+}

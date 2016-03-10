@@ -1,0 +1,36 @@
+// Skillset.
+
+
+.skillset {
+
+    &__intro {
+        // 2nd-level heading for intro.
+        font-size: @h2-font-size;
+
+        text-align: center;
+    }
+
+
+    &__item {
+        // Increase gap between items, so when they stacked above each other
+        // the gap between them is bigger then gap between skill title and
+        // description.
+        margin-bottom: 2* @unit;
+    }
+
+
+    @media @laptop-and-up {
+
+        &__list {
+            // Wrap floats.
+            .clearfix();
+        }
+
+
+        &__item {
+            // Use two-column layout on laptop and above.
+            float: left;
+            width: 50%;
+        }
+    }
+}

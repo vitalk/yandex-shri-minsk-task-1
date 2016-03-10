@@ -1,0 +1,46 @@
+// Base typography.
+
+
+// Use single-direction margin declarations.
+h1, h2, h3,
+ul, li,
+p {
+    margin-bottom: @unit;
+}
+
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+
+h1 {
+    font-size: @h1-font-size;
+}
+
+
+h2 {
+    font-size: @h2-font-size;
+}
+
+
+h3 {
+    font-size: @h3-font-size;
+}
+
+
+code,
+.code {
+    font-size: .875em;
+    font-family: Menlo, Consolas, monospace;
+
+    padding: .2em;
+    background: rgba(0,0,0,.03);
+    border: dashed 1px rgba(0,0,0,.2);
+}
+
+
+// The lead paragraph. Increases font size to emphasis the text.
+.lead {
+    font-size: 1.1em;
+}
